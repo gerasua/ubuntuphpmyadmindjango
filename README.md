@@ -49,6 +49,8 @@ $ sudo cp /var/www/html/phpmyadmin/config.sample.inc.php /var/www/html/phpmyadmi
 
 <h2>KEY GENERETION FOR config.inc.php</h2>
 
+$ openssl rand -base64 32
+
 $ sudo nano /var/www/html/phpmyadmin/config.inc.php
 
 $cfg[‘blowfish_secret’] = ‘your-key‘; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
